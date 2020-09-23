@@ -39,8 +39,9 @@ INSERT INTO `tblEnrollments` (` Subj`, `#`, `Title`, `Comp Numb`, `Sec`, `Ptrm`,
 ('ANFS', '491', 'Doctoral Dissertation Research', 90005, 'A', '1', 'TD', '', 'M', 'CALS', 20, 0, '', 'TBA', '', '       ', '1 to 18', '', '', 'N', 'Harvey, Jean Ruth', 'jharvey', 'Jean.Harvey@uvm.edu', '', ' ');</p>
 
 <h2>Select sql example </h2>
-<p>SELECT ` Subj`,`#`,`Title`,`Bldg`,`Room`,`Days`,`Start Time`FROM`tblEnrollments` WHERE `Days` LIKE '%M%' AND `Bldg` LIKE '%votey%' AND `Room` LIKE '%303%' ORDER BY `tblEnrollments`.`Start Time` ASC</p>
-
+<p>SELECT ` Subj`,`#`,`Title`,`Bldg`,`Room`,`Days`,`Start Time`FROM`tblEnrollments` WHERE `Days` LIKE '%M%' AND `Bldg` LIKE '%votey%' AND `Room` LIKE '%303%' AND `#` LIKE '%148% ORDER BY `tblEnrollments`.`Start Time` ASC</p>
+<p>INSERT INTO `tblStudentEnrollments` (`pfkStudentNetId`, `pfkEnrollmentId`) VALUES ('mavega', '1530');</p>
+<p>INSERT INTO `tblStudentEnrollments` (`pfkStudentNetId`, `pfkEnrollmentId`) VALUES ('mavega', '1517');</p>
 <?php
 include "footer.php"
 ?>
