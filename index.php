@@ -25,7 +25,6 @@ include "top.php";
 		<th> Building </th>
 		<th> Room</th>
                 <th> Instructor </th>
-		
 	</tr>
 <?php
 
