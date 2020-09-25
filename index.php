@@ -2,7 +2,7 @@
 <html lang = "en">
 <head>
   <!-- basic.html -->
-  <title>We are working</title>
+  <title>We Are Working</title>
   <meta charset = "UTF-8" />
 </head>
 <body>

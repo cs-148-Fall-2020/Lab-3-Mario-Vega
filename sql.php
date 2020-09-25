@@ -42,6 +42,9 @@ INSERT INTO `tblEnrollments` (` Subj`, `#`, `Title`, `Comp Numb`, `Sec`, `Ptrm`,
 <p>SELECT ` Subj`,`#`,`Title`,`Bldg`,`Room`,`Days`,`Start Time`FROM`tblEnrollments` WHERE `Days` LIKE '%M%' AND `Bldg` LIKE '%votey%' AND `Room` LIKE '%303%' AND `#` LIKE '%148% ORDER BY `tblEnrollments`.`Start Time` ASC</p>
 <p>INSERT INTO `tblStudentEnrollments` (`pfkStudentNetId`, `pfkEnrollmentId`) VALUES ('mavega', '1530');</p>
 <p>INSERT INTO `tblStudentEnrollments` (`pfkStudentNetId`, `pfkEnrollmentId`) VALUES ('mavega', '1517');</p>
+<p>SELECT tblStudent.fldFirstName,` Subj`,`#`,`Title`,`Days`,`Start Time`, `End Time`, `Bldg`,`Room`,`Instructor` FROM tblEnrollments
+JOIN tblStudentEnrollments ON pmkEnrollmentId = pfkEnrollmentId JOIN tblStudent ON tblStudent.pmkNetId = tblStudentEnrollments.pfkStudentNetId  
+ORDER BY `tblEnrollments`.`Start Time` ASC</p>
 <?php
 include "footer.php"
 ?>
